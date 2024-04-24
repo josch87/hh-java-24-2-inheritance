@@ -4,6 +4,7 @@ public class Vehicle {
     protected String manufacturer;
     protected String model;
     protected int yearOfManufacture;
+    protected int maxPassengers;
 
     public void printVehicle() {
         System.out.println(this);
@@ -15,6 +16,7 @@ public class Vehicle {
                 "manufacturer='" + manufacturer + '\'' +
                 ", model='" + model + '\'' +
                 ", yearOfManufacture=" + yearOfManufacture +
+                ", maxPassengers=" + maxPassengers +
                 '}';
     }
 }

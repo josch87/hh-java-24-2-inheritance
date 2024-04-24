@@ -1,16 +1,18 @@
 package com.aljoschazoeller.java.domain.base;
 
-public class Car extends Vehicle {
-    private int numberOfDoors;
+public class Motorcycle extends Vehicle {
+    private String type;
+    private boolean canAttachSidecar = false;
 
-    public void printCar() {
-        System.out.println(this);
+    public String getType() {
+        return type;
     }
 
     @Override
     public String toString() {
-        return "Car{" +
-                "numberOfDoors=" + numberOfDoors +
+        return "Motorcycle{" +
+                "type='" + type + '\'' +
+                ", canAttachSidecar=" + canAttachSidecar +
                 ", manufacturer='" + manufacturer + '\'' +
                 ", model='" + model + '\'' +
                 ", yearOfManufacture=" + yearOfManufacture +
